@@ -2,7 +2,7 @@
 Scripting in [Blender](https://www.blender.org/) with Python 3.
 
 ## Attribution
-Original project forked from https://github.com/njanakiev/blender-scripting. Thanks goes to @njanakiev for their work!
+Original project forked from [njanakiev](https://github.com/njanakiev/blender-scripting).
 
 ## Table of Contents
 - [Requirements](#requirements)
