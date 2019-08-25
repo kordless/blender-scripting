@@ -1,7 +1,8 @@
-# blender-scripting
-This is a collection of simple to more involved examples to scripting in [Blender](https://www.blender.org/) with Python.
+# Scripting Python for Blender 2.8 
+Scripting in [Blender](https://www.blender.org/) with Python 3.
 
-
+## Attribution
+Original project forked from https://github.com/njanakiev/blender-scripting. Thanks @njanakiev!
 
 ## Table of Contents
 - [Requirements](#requirements)
