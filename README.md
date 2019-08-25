@@ -1,6 +1,8 @@
 # Scripting Python for Blender 2.8 
 Scripting in [Blender](https://www.blender.org/) with Python 3.
 
+![Voronoi Sphere](/img/voronoi_sphere.png)
+
 ## Attribution
 Original project forked from [njanakiev](https://github.com/njanakiev/blender-scripting).
 
