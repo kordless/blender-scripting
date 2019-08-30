@@ -1,8 +1,10 @@
 # Scripting Python for Blender 2.8 
-Scripting in [Blender](https://www.blender.org/) with Python 3.
+Mind blowing scripting in [Blender 2.8+](https://www.blender.org/) with Python 3.
 
 ## Attribution
-Original project forked from https://github.com/njanakiev/blender-scripting. Thanks @njanakiev!
+Original project forked from https://github.com/njanakiev/blender-scripting. Updated to support Blender 2.8. 
+
+Thanks to @njanakiev for the base content!
 
 ## Table of Contents
 - [Requirements](#requirements)
@@ -18,20 +20,23 @@ Original project forked from https://github.com/njanakiev/blender-scripting. Tha
 - [Fisher Iris Visualization](#fisher-iris-visualization)
 - [Voronoi Sphere](#voronoi-sphere)
 
-
 ## Requirements
 
-`Blender 2.5+`
+`Blender 2.8+`
 
-To run the examples, open your favorite console in the example folder, make sure that the Blender executable is an environment variable or in the PATH environment variable in Windows and run the following command. Make sure to edit in [run_script.py](run_script.py) the `scriptFile` variable to the Python script in the [scripts](scripts) folder you want to execute.
+This project contains Python scripts designed to run on Blender 2.8 and above.
+
+On a POSIX-ish system, the Blender executable's location is included in the PATH environment and then run:
+
 
 ```
-blender -b -P run_script.py
+$BLENDER_HOME="/Applications/Blender.app/Contents/MacOS/"
+export PATH="$BLENDER_HOME:$PATH"
+cd ~/blender-scripting/
+Blender -b -P eggs.py
 ```
 
-Another option is to open the script in Blender and run [run_script.py](run_script.py) inside Blender, which is a nice way to test and tweak the files and to see and play with the generated result before rendering.
-
-
+On Windows, the script [run_script.py](run_script.py) is opened inside Blender.
 
 ## Resources
 
@@ -39,17 +44,19 @@ Another option is to open the script in Blender and run [run_script.py](run_scri
 - [Blender 3D Python Scripting](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Advanced_Tutorials/Python_Scripting/Introduction)
 - [Blender Scripting Blog](http://blenderscripting.blogspot.co.at/)
 
-
-
 ## Utils
 
-[utils](scripts/utils/__init__.py) 
+[utils](scripts/utils/__init__.py)
 
-Some frequently used functions in blender, which will be used in most of the scripts.
+## Tip #7
+
+If you get stuck, reset Blender by going to File..Defaults..Load Factory Settings. Click twice to reset.
 
 
+## Simple Metaball
 
-## Simple Sphere
+Open Blender, click on Scripting Layout. Click new
+```
 
 [simple_sphere.py](scripts/simple_sphere.py) 
 
